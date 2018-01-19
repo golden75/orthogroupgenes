@@ -1,6 +1,7 @@
 Neranjan Perera
 # get_orthogroupgenes
-The program will selects the grouped ortholog genes for a particular species. 
+
+The program will selects the grouped ortholog genes for a particular species.
 
 usage: get_orthogroup_genes.py [-h] [--orthofile ORTHO_GROUP_FILE] 
                                [--fasta FASTA_FILE] [--tag SPECIES_TAG] [-l]
@@ -8,7 +9,7 @@ usage: get_orthogroup_genes.py [-h] [--orthofile ORTHO_GROUP_FILE]
                                
 
 optional arguments:  
-  -h, --help            show this help message and exit. 
+  -h, --help            show this help message and exit.
   --orthofile ORTHO_GROUP_FILE. 
                         ortho group file name. 
   --fasta FASTA_FILE    FASTA file name. 
