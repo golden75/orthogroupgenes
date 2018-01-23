@@ -32,6 +32,8 @@ optional arguments:.
   --version             show program's version number and exit. 
 
 s = "Python syntax highlighting"
-print s
+print s.
+
 --
+
 
