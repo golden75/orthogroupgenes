@@ -9,7 +9,7 @@ usage: get_orthogroup_genes.py [-h] [--orthofile ORTHO_GROUP_FILE]
                                
 
 optional arguments:  
-  -h, --help            show this help message and exit.
+ ... -h, --help            show this help message and exit.
   
   --orthofile ORTHO_GROUP_FILE. 
                         ortho group file name. 
