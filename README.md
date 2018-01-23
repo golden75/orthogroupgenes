@@ -8,7 +8,7 @@ usage: get_orthogroup_genes.py [-h] [--orthofile ORTHO_GROUP_FILE]
                                [-s] [--outfile OUTPUT_FILE] [--version] 
                                
 
-optional arguments:  
+optional arguments:.   
  ... -h, --help            show this help message and exit.
   
   --orthofile ORTHO_GROUP_FILE. 
