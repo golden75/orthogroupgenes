@@ -9,7 +9,10 @@ usage: `get_orthogroup_genes.py [-h] [--orthofile ORTHO_GROUP_FILE] [-fasta FAST
 optional arguments:
  - -h, --help            show this help message and exit
  
-
+optional arguments:
+ - -h, --help            show this help message and exit
+ 
+ 
 usage: `get_orthogroup_genes.py [-h] [--orthofile ORTHO_GROUP_FILE]		
                                [--fasta FASTA_FILE] [--tag SPECIES_TAG] [-l]. 
                                [-s] [--outfile OUTPUT_FILE] [--version] `
