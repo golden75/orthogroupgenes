@@ -1,4 +1,4 @@
-Neranjan Perera
+**Neranjan Perera**
 <h1>get_orthogroupgenes</h1>
 
 The program will selects the grouped ortholog genes for a particular species.		
