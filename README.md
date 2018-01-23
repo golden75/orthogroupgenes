@@ -33,3 +33,5 @@ optional arguments:.
 
 s = "Python syntax highlighting"
 print s
+--
+
