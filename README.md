@@ -30,3 +30,6 @@ optional arguments:.
                         will use the default name; sorted_genes.fasta. 
                         
   --version             show program's version number and exit. 
+
+s = "Python syntax highlighting"
+print s
