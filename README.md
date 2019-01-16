@@ -49,4 +49,44 @@ print s.
 
 --
 
+```python
+import sys,re
+from Bio import SeqIO
+from Bio.Seq import Seq
+from Bio.SeqRecord import SeqRecord
+from Bio.Alphabet import IUPAC
+from Bio.Seq import MutableSeq
+from array import array
 
+
+
+def get_sequence(f_file,gid,out_file):
+        f = open(f_file, 'r')
+        for seq_record in SeqIO.parse(f,"fasta"):
+                if ( gid == seq_record.id):
+                        rec = SeqRecord(seq_record.seq,
+                                id = seq_record.id,
+                                description = "")
+                        SeqIO.write(rec, out_file, "fasta")
+                        break
+        f.close()
+        return;
+
+
+def get_csv_geneID(csv_line):
+        ln = csv_line.strip().split(",")
+        return ln[1].split("\"")[1].split(":")[1]
+
+def get_seqid(g_id,fasta_out):
+        gtf = open(sys.argv[2],"r")
+        for gtf_line in gtf:
+                gtf_line = gtf_line.split('#', 1)[0]
+                if(gtf_line != ""):
+                        gln = gtf_line.strip().split("\t")
+                        gid = gln[5]
+                        if(gid == g_id):
+                                print("GeneID:%s\ttableID:\t%s\tprotein-ID:\t%s" %(g_id, gid, gln[7]))
+                                get_sequence(sys.argv[3],gln[7],fasta_out)
+                                break
+
+```
